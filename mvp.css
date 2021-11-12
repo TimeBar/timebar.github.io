@@ -109,9 +109,11 @@ section pre {
 }
 
 section aside {
-    border: 1px solid var(--color-bg-secondary);
+   
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow) var(--color-shadow);
+    border: 2px solid #2c2c2c;
+    border-radius: var(--border-radius);
+    background: #222222;
     margin: 1rem;
     padding: 1.25rem;
     width: var(--width-card);
@@ -119,7 +121,7 @@ section aside {
 }
 
 section aside:hover {
-    box-shadow: var(--box-shadow) var(--color-bg-secondary);
+   background: #333 !important;
 }
 
 [hidden] {
