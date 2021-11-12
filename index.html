@@ -1,1 +1,237 @@
-<html>WIP</html>
+<!-- MVP.css quickstart template: https://github.com/andybrewer/mvp/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="https://via.placeholder.com/70x70">
+    <link rel="stylesheet" href="./mvp.css">
+
+    <meta charset="utf-8">
+    <meta name="description" content="My description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TimeBar for Rainmeter</title>
+
+
+<style>
+
+.emoji {    font-size: 70px;}
+.justify {opacity:0.5;text-align:justify;}
+.bars {border-bottom:1px solid #ffffff1c; height:900px;background-image:linear-gradient(to right, #ffffff1a 1px, transparent 1px);
+  background-size: 200px 30px;
+
+}
+#timeBar{z-index:-1;left:75%;position:absolute;vertical-align:middle;
+
+background:#ffffff1c;display:block;
+border-left:5px solid #fff3;color:White;
+text-align:left;
+
+    height: 900px;
+    width: 200px;
+    text-align: left;
+
+
+}
+
+
+#timeBar h1 {font-weight:normal;font-family:Segoe UI Light;margin:450px 0 0 10px; font-size:100px;}
+#timeBar h2 {font-weight:normal;opacity:0.5;margin:0 0 0 20px;font-size:30px;width:400px;}
+#timeBar p {margin:190px 0 0 0px;text-align:center; font-size:20px;width:200px;}
+
+
+
+</style>
+</head>
+
+<body onload="loadTime()">
+<img id="slideE" name="slideE" src="" />
+
+<div id="timeBar"><h1 id="clock" name="clock" >-</h1>
+<h2 id="date">-</h2>
+
+<p id="task"><p>
+
+</div>
+<div  class="bars">
+    <header>
+        <nav>
+            <a href="/"><img alt="Logo" src="img/timebaricon.png" height="70"></a>
+            <ul>
+                <li>Home</li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contribute</a>
+                    <ul>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Donate</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+<img id="slide" name="slide"  src="" style="width:660px;border:10px solid #8d8d8d40;margin-bottom:30px;border-radius:10px" />
+
+        <h1>Time Management for <s>lazy</s> people</h1>
+        <p>Open Source, No Accounts or Cloud Sync, No Ads, No Learning. No Paying.</p>
+        <br>
+        <p ><a href="TimeBar.rmskin"><b class="grad">Download for Windows (6MB)</b></a>
+    </header>
+
+</div>
+<br>
+
+
+<section>
+            <header>
+                <h2>Wait a minute! Surely I already tried a million other apps like it.</h2>
+                <p>Well, (don't call me Shirley) I promise you, it is unlike anything you tried before, here's why:</p>
+            </header>
+</section>
+<section>
+            <aside>
+        <span class="emoji"> 🧡 </span>
+                <h3>Minimal Features</h3>
+                <p class="justify">We're all weary of those apps that "try to do everything". This one does VERY little! The simplicity alone makes it a lot less painful.</p>
+           
+            </aside>
+            <aside>
+               <span class="emoji"> ⌛️ </span>
+                <h3>Minimal Pressure</h3>
+                <p class="justify">Actually, why even cave to the pressure of Toxic Productivity? Fill your TimeBar with hobbies and pleasure instead.</p>
+
+            </aside>
+            <aside>
+                  <span class="emoji"> ✏️ </span>
+                <h3>Minimal Detail</h3>
+                <p class="justify">Why be a neat freak and plan your day to its smallest details? Just add a single word to a Chunk and be done with it.</p>
+            </aside>
+
+            <aside>
+          <span class="emoji"> 💸 </span>
+                <h3>Minimal Investment</h3>
+                <p class="justify">No user accounts because we don't need your data. No ads or purchase because we like you! Donate though, if you like it!</p>
+            </aside>
+
+            <aside>
+                   <span class="emoji"> ⚙️ </span>
+                <h3><s>Minimal</s> Configuration</h3>
+                <p class="justify">Actually this part isn't so minimal. You are free to customize and configure it precisely the way you want it.</p>
+            </aside>
+
+            <aside>
+              <span class="emoji"> 🌌 </span>
+                <h3>Maximal Aesthetics</h3>
+                <p class="justify">We found that besides being a potentially useful Tool, it is also simply beautiful and would make your otherwise dull Desktop amazing!</p>
+            </aside>
+
+
+
+        </section>
+
+
+
+
+<hr>
+<section id="testimonials">
+            <blockquote>
+        
+                "Before, life was a dull treadmill of seemingly unconnected events. Now I look forward to the new TimeBar which has allowed me to see in my own miserable life.
+                <footer> <span class="emoji"> 🤔 </span><br><br><i>- A Respected City Official</i></footer>
+            </blockquote>
+        </section>
+
+
+
+    <main>
+        <hr>
+
+        <article>
+ 
+            <figure>
+                <img style="border-radius:10px;" alt="Stock photo" src="img/desk.png">
+               <h1 style="text-align:center;">Works on Windows 7, 8, 10 and 11</h1>
+            </figure>
+        </article>
+
+ </main>
+    <footer>
+        <center>
+            <small>Email us at <a href="mailto:timebarapp@outlook.com">timebarapp@outlook.com</a></small>
+        </center>
+    </footer>
+
+
+
+
+
+<script language="JavaScript"> 
+var i = 1; var path = new Array(); 
+
+
+function loadTime() {
+const d = new Date();
+let hour = d.getHours();
+let minute = d.toTimeString().substr(3,2)
+let day = d.toLocaleString('default', { weekday: 'long' });
+let date = d.getDate();
+let month = d.toLocaleString('default', { month: 'long' });
+
+document.getElementById("clock").innerHTML = hour + ":" + minute;
+document.getElementById("date").innerHTML = day + ", " + date + " " + month;
+
+
+var ie =  Math.floor(Math.random() * 6) + 1;
+
+document.slide.src = './img/smaller/' + ie + '.jpg'; 
+document.slideE.src = './img/smaller/' + ie + '.jpg'; 
+
+
+var things = ['Read a Book', 'Go for a Swim', 'Mediate', 'Play Piano', 'Draw', 'Socialise', 'Sleep', 'Clean Room'];
+var thing = things[Math.floor(Math.random()*things.length)];
+document.getElementById("task").innerHTML = thing;
+
+
+}
+
+
+
+
+
+function swapImage() 
+{ 
+document.slide.src = './img/slideshow/' + i + '.jpg'; 
+document.slideE.src = './img/slideshow/' + i + '.jpg'; 
+if(i < 20) i++; 
+else i = 1; 
+setTimeout("swapImage()",2000); 
+} 
+//window.onload=swapImage; 
+
+
+
+function prettyDate2(time) {
+  var date = new Date(parseInt(time));
+  return date.toLocaleTimeString(navigator.language, {
+    hour: '2-digit',
+    minute:'2-digit'
+  });
+}
+
+
+
+
+
+
+
+</script> 
+
+
+
+
+
+
+</body>
+
+</html>
