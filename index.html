@@ -154,9 +154,9 @@ h1 {    font-size: 2.5em;}
         <article>
       <h2 style="text-align:center;font-size:2em;margin:0;">How does it work anyway?</h2>
 	  <br><br>
-            <figure>
-                <img style="border-radius:10px;" alt="Stock photo" src="img/desk.png">
-               <h1 style="text-align:center;">Works on Windows 7, 8, 10 and 11</h1>
+            <figure>   <center>
+              <iframe width="760" height="435" src="https://www.youtube-nocookie.com/embed/JomfDorKDlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </center> <h1 style="text-align:center;">Works on Windows 7, 8, 10 and 11</h1>
             </figure>
         </article>
 <center><p ><a href="TimeBar.rmskin"><b class="grad">Download (6MB)</b></a></p></center>
@@ -187,6 +187,14 @@ document.getElementById("clock").innerHTML = hour + ":" + minute;
 document.getElementById("date").innerHTML = day + ", " + date + " " + month;
 
 
+loadWallpaper();
+
+ setTimeout(loadTime, 5000);
+}
+
+
+function loadWallpaper() {
+
 var ie =  Math.floor(Math.random() * 6) + 1;
 
 document.slide.src = './img/smaller/' + ie + '.jpg'; 
@@ -197,10 +205,7 @@ var things = ['Read a Book', 'Go for a Swim', 'Mediate', 'Play Piano', 'Draw', '
 var thing = things[Math.floor(Math.random()*things.length)];
 document.getElementById("task").innerHTML = thing;
 
-
 }
-
-
 
 
 
