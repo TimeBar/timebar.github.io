@@ -50,7 +50,7 @@
 
 /* Layout */
 @media only screen and (max-width: 600px) {
-	
+	nav {margin-bottom: 1rem !important;}
 	.downloadLink {display:none !important;}
 	.sendLink {display:block !important;}
 	
