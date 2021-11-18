@@ -48,7 +48,7 @@ h1 {    font-size: 2.5em;}
 </style>
 </head>
 
-<body onload="loadTime()">
+<body onload="loadTime();loadWallpaper();">
 <img id="slideE" name="slideE" src="" />
 
 <div id="timeBar"><h1 id="clock" name="clock" >-</h1>
@@ -155,7 +155,7 @@ h1 {    font-size: 2.5em;}
       <h2 style="text-align:center;font-size:2em;margin:0;">How does it work anyway?</h2>
 	  <br><br>
             <figure>   <center>
-              <iframe width="760" height="435" src="https://www.youtube-nocookie.com/embed/JomfDorKDlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="760" height="435" src="https://www.youtube-nocookie.com/embed/SanaWZiC7HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </center> <h1 style="text-align:center;">Works on Windows 7, 8, 10 and 11</h1>
             </figure>
         </article>
@@ -187,7 +187,7 @@ document.getElementById("clock").innerHTML = hour + ":" + minute;
 document.getElementById("date").innerHTML = day + ", " + date + " " + month;
 
 
-loadWallpaper();
+
 
  setTimeout(loadTime, 5000);
 }
