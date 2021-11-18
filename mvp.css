@@ -46,7 +46,14 @@
 		--filter-effect: blur(130px);
 		--opacity-slide: 1.0;
     }
+	
+	
+	.iconApp{
+  content: url('img/timebaricon.png') !important;
 }
+	
+}
+
 
 /* Layout */
 @media only screen and (max-width: 600px) {
@@ -63,6 +70,16 @@
 #timeBar {display:none !important;}
 .soSpecial  {display:none !important;}
 }
+	
+	
+	
+	
+	
+	.iconApp{
+  content: url('img/timebaricon_d.png') ;
+}
+
+	
 	
 	.sendLink {display:none;}
 	
