@@ -75,8 +75,13 @@ h1 {    font-size: 2.5em;}
         <h1>Time planning for <s>lazy</s> people</h1>
         <p>Open Source. No Accounts or Cloud Sync, No Ads, No Learning. No Paying</p>
         <br>
-        <p ><a href="TimeBar.rmskin"><b class="grad">Download (6MB)</b></a>
-<a href="TimeBar.rmskin"><b class="grad2">How it works</b></a>
+        <p >
+		
+		<a class="downloadLink" href="TimeBar.rmskin"><b class="grad">Download (6MB)</b></a>
+<a class="sendLink sendActual" href=""><b class="grad">Send me a link</b></a>
+		
+		
+<a title="Watch the Video" style="cursor:pointer;" onclick="window.scrollTo(0,document.body.scrollHeight);"><b class="grad2">How it works</b></a>
     </header>
 
 </div>
@@ -85,7 +90,7 @@ h1 {    font-size: 2.5em;}
 
 <section>
        
-                <h2 style="font-size:2em;padding-top:20px;margin:0;">...what's so special about this?</h2>
+                <h2 class="soSpecial" style="font-size:2em;padding-top:20px;margin:0;">...what's so special about this?</h2>
   
 
 </section>
@@ -155,11 +160,27 @@ h1 {    font-size: 2.5em;}
       <h2 style="text-align:center;font-size:2em;margin:0;">How does it work anyway?</h2>
 	  <br><br>
             <figure>   <center>
-              <iframe width="760" height="435" src="https://www.youtube-nocookie.com/embed/SanaWZiC7HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </center> <h1 style="text-align:center;">Works on Windows 7, 8, 10 and 11</h1>
+			
+			
+			<div class="videoWrapper">
+              <iframe width="560" height="349" src="https://www.youtube-nocookie.com/embed/SanaWZiC7HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+</div>
+
+			 </center> <h1 style="text-align:center;">Works on Windows 7, 8, 10 and 11</h1>
             </figure>
+			
+			
+			
+			
         </article>
-<center><p ><a href="TimeBar.rmskin"><b class="grad">Download (6MB)</b></a></p></center>
+<center><p >
+
+<a class="downloadLink2" href="TimeBar.rmskin"><b class="grad">Download (6MB)</b></a>
+<a class="sendLink2 sendActual" href=""><b class="grad">Send me a link</b></a>
+
+
+</p></center>
  </main>
     <footer>
         <center>
@@ -231,7 +252,24 @@ function prettyDate2(time) {
 
 
 
+const shareData = {
+    title: 'TimeBar',
+    text: 'Easy, lazy time planning!',
+    url: 'https://timebar.github.io'
+  }
 
+  const btn = document.querySelector('.sendActual');
+  const resultPara = document.querySelector('.result');
+
+  // Share must be triggered by "user activation"
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.share(shareData)
+      resultPara.textContent = 'MDN shared successfully'
+    } catch(err) {
+      resultPara.textContent = 'Error: ' + err
+    }
+  });
 
 
 

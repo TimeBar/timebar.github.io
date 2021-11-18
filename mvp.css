@@ -49,6 +49,38 @@
 }
 
 /* Layout */
+@media only screen and (max-width: 600px) {
+	
+	.downloadLink {display:none !important;}
+	.sendLink {display:block !important;}
+	
+		.downloadLink2 {display:none !important}
+	.sendLink2 {display:block !important}
+	
+	body {overflow-x:hidden;}
+.bars {background-image:none !important;}
+.slide {width:100% !important;border:none !important;}
+#timeBar {display:none !important;}
+.soSpecial  {display:none !important;}
+}
+	.downloadLink {display:block;}
+	.sendLink {display:none;}
+	
+		.downloadLink2 {display:block;}
+	.sendLink2 {display:none;}
+	
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 #slideE {
     margin-top: -70px;
