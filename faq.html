@@ -10,198 +10,130 @@
     <meta charset="utf-8">
     <meta name="description" content="Time Management for lazy people">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script data-goatcounter="https://timebar.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://timebar.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <title>TimeBar for Rainmeter | FAQ</title>
 
-<style>
+    <style>
+        header,
+        main {
+            padding: 0 16px 0 0;
+        }
+        
+        h2 {
+            font-size: 80px;
+        }
+        
+        details p {
+            opacity: 0.6
+        }
+        
+        article {
+            width: 70%
+        }
+    </style>
 
-header, main {padding:0 16px 0 0;}
-
-
-h2 {    font-size: 80px;}
-
-details p {opacity:0.6}
-article {width:70%}
-</style>
-
-
-<style>
-
-
-.bars {     min-height: 100vh;background-image:linear-gradient(to right, #ffffff1a 1px, transparent 1px);
-  background-size: 200px 30px;
-
-}
-#timeBar{position:fixed;top:0;z-index:-1;left:75%;vertical-align:middle;
-
-background:#ffffff1c;display:block;
-border-left:5px solid #fff3;color:White;
-text-align:left;
-
-    height:100vh;
-    width: 200px;
-    text-align: left;
-
-
-}
-
-
-#timeBar h1 {font-weight:normal;font-family:Segoe UI Light;margin:450px 0 0 10px; font-size:100px;}
-#timeBar h2 {font-weight:normal;opacity:0.5;margin:0 0 0 20px;font-size:30px;width:400px;}
-#timeBar p {margin:190px 0 0 0px;text-align:center; font-size:20px;width:200px;}
-
-h1 {    font-size: 2.5em;}
-.slide {width:660px;border:10px solid #ffffff40;margin-bottom:30px;border-radius:10px}
-
-
-</style>
 
 </head>
 
 <body onload="loadTime()">
-<div  class="bars">
-    <header>
-        <nav>
-            <a href="/"><img alt="Logo" src="img/timebaricon.png" height="70"></a>
-            <ul>
-                <li ><a href="./">Home</a></li>
-                <li>FAQ</li>
-   <li><a target="_blank" href="https://github.com/TimeBar">GitHub</a></li>
-    <li><a target="_blank" href="https://www.paypal.com/donate/?cmd=_donations&business=fedia1%40gmail.com&item_name=Support+TimeBar&currency_code=USD&source=url">Donate</a></li>
-            </ul>
-        </nav>
+    <div class="bars">
+        <header>
+            <nav>
+                <a href="/"><img alt="Logo" src="img/timebaricon.png" height="70"></a>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li>FAQ</li>
+                    <li><a target="_blank" href="https://github.com/TimeBar">GitHub</a></li>
+                    <li><a target="_blank" href="https://www.paypal.com/donate/?cmd=_donations&business=fedia1%40gmail.com&item_name=Support+TimeBar&currency_code=USD&source=url">Donate</a>
+                    </li>
+                </ul>
+            </nav>
 
 
 
-    </header>
-	
-	
-	
-<div id="timeBar"><h1 id="clock" name="clock" >-</h1>
-<h2 id="date">-</h2>
-
-<p id="task"><p>
-
-</div>
-
-
-<main>
-<article id="faq">
-            <h2>F.A.Q.</h2>
-            <details>
-                <summary>Is this really free, and why?</summary>
-                <p>I don't subscribe to the whole "pay for someone's book/diet/advice/app and improve your life".<br>The truth is that your Time is in your hands and no amount of paid services will help you with it.<br> Use what you can, the best resources are free! </p>
-            </details>
-			
-			
-            <details>
-                <summary>Is it safe / private / offline?</summary>
-                <p>Yes. It runs entirely locally on your computer. nobody can access it and never will.</p>
-            </details>
-			
-			
-            <details>
-                <summary>What is Rainmeter and why do I need to install it?</summary>
-                <p>Rainmeter is an open source, lightweight tool primarily used for Customization. This time, we're using it as a framework for productivity! TimeBar at the moment is built around it, as Rainmeter is extremely efficient and well trusted in the community.</p>
-            </details>
-			
-            <details>
-                <summary>How to uninstall it?</summary>
-                <p>Either delete the "TimeBar" folder in Documents\Rainmeter\Skins or uninstall Rainmeter from the Control Panel.</p>
-            </details>
-			
-			
-			
-            <details>
-                <summary>Why was this made?</summary>
-                <p>For the same kind of reasons Dune 2021 was made:</p>
-				<img src="img/nolanvilleneuve.jpg" />
-				<p>I was struggling to motivate myself for another, bigger project so I made TimeBar to help me plan.<br>It worked great for me and I found it useful for many other things too, hope it's like that for you as well!
-            </details>	
-			
-            <details>
-                <summary>Is it based on any real world science?</summary>
-                <p>Actually yes, by pure coincidence. As I was making this project a friend told me about the Spoon Theory, which seems to align with the "Chunks" philosophy.</p>
-            </details>
-			
-			
-		<details>
-                <summary>Is there a Web version?</summary>
-                <p>As it goes against our philosophy of "opening an app", there isn't and there won't be.</p>
-            </details>
-			
-			<details>
-                <summary>Is there a version for iOS / macOS?</summary>
-                <p>We are currently considering its development.</p>
-            </details>
-			
-			
-			<details>
-                <summary>How can I support this Project?</summary>
-                <p>Please donate or reach out to us by email if you have some concrete ideas and are willing to code!</p>
-            </details>
-			
-		
-		
-        </article>
-		
-		
-		
-		</main>
-</div>
+        </header>
 
 
 
+        <div id="timeBar">
+            <h1 id="clock" name="clock">-</h1>
+            <h2 id="date">-</h2>
+
+            <p id="task">
+                <p>
+
+        </div>
+
+
+        <main>
+            <article id="faq">
+                <h2>F.A.Q.</h2>
+                <details>
+                    <summary>Is this really free, and why?</summary>
+                    <p>I don't subscribe to the whole "pay for someone's book/diet/advice/app and improve your life".
+                        <br>The truth is that your Time is in your hands and no amount of paid services will help you with it.<br> Use what you can, the best resources are free!
+                    </p>
+                </details>
+
+
+                <details>
+                    <summary>Is it safe / private / offline?</summary>
+                    <p>Yes. It runs entirely locally on your computer. nobody can access it and never will.</p>
+                </details>
+
+
+                <details>
+                    <summary>What is Rainmeter and why do I need to install it?</summary>
+                    <p>Rainmeter is an open source, lightweight tool primarily used for Customization. This time, we're using it as a framework for productivity! TimeBar at the moment is built around it, as Rainmeter is extremely efficient and well trusted
+                        in the community.</p>
+                </details>
+
+                <details>
+                    <summary>How to uninstall it?</summary>
+                    <p>Either delete the "TimeBar" folder in Documents\Rainmeter\Skins or uninstall Rainmeter from the Control Panel.</p>
+                </details>
 
 
 
+                <details>
+                    <summary>Why was this made?</summary>
+                    <p>For the same kind of reasons Dune 2021 was made:</p>
+                    <img src="img/nolanvilleneuve.jpg" />
+                    <p>I was struggling to motivate myself for another, bigger project so I made TimeBar to help me plan.
+                        <br>It worked great for me and I found it useful for many other things too, hope it's like that for you as well!
+                </details>
+
+                <details>
+                    <summary>Is it based on any real world science?</summary>
+                    <p>Actually yes, by pure coincidence. As I was making this project a friend told me about the Spoon Theory, which seems to align with the "Chunks" philosophy.</p>
+                </details>
+
+
+                <details>
+                    <summary>Is there a Web version?</summary>
+                    <p>As it goes against our philosophy of "opening an app", there isn't and there won't be.</p>
+                </details>
+
+                <details>
+                    <summary>Is there a version for iOS / macOS?</summary>
+                    <p>We are currently considering its development.</p>
+                </details>
+
+
+                <details>
+                    <summary>How can I support this Project?</summary>
+                    <p>Please donate or reach out to us by email if you have some concrete ideas and are willing to code!
+                    </p>
+                </details>
 
 
 
-<script language="JavaScript"> 
-var i = 1; var path = new Array(); 
-
-
-function loadTime() {
-const d = new Date();
-let hour = d.getHours();
-let minute = d.toTimeString().substr(3,2)
-let day = d.toLocaleString('default', { weekday: 'long' });
-let date = d.getDate();
-let month = d.toLocaleString('default', { month: 'long' });
-
-document.getElementById("clock").innerHTML = hour + ":" + minute;
-document.getElementById("date").innerHTML = day + ", " + date + " " + month;
-
-
-loadWallpaper();
-
- setTimeout(loadTime, 5000);
-}
-
-
-function loadWallpaper() {
+            </article>
 
 
 
-var things = ['Read a Book', 'Go for a Swim', 'Mediate', 'Play Piano', 'Draw', 'Socialise', 'Sleep', 'Clean Room'];
-var thing = things[Math.floor(Math.random()*things.length)];
-document.getElementById("task").innerHTML = thing;
-
-}
-
-
-
-
-
-function prettyDate2(time) {
-  var date = new Date(parseInt(time));
-  return date.toLocaleTimeString(navigator.language, {
-    hour: '2-digit',
-    minute:'2-digit'
-  });
-}
+        </main>
+    </div>
 
 
 
@@ -209,13 +141,57 @@ function prettyDate2(time) {
 
 
 
-</script> 
+
+
+    <script language="JavaScript">
+        var i = 1;
+        var path = new Array();
+
+
+        function loadTime() {
+            const d = new Date();
+            let hour = d.getHours();
+            let minute = d.toTimeString().substr(3, 2)
+            let day = d.toLocaleString('default', {
+                weekday: 'long'
+            });
+            let date = d.getDate();
+            let month = d.toLocaleString('default', {
+                month: 'long'
+            });
+
+            document.getElementById("clock").innerHTML = hour + ":" + minute;
+            document.getElementById("date").innerHTML = day + ", " + date + " " + month;
+
+
+            loadWallpaper();
+
+            setTimeout(loadTime, 5000);
+        }
+
+
+        function loadWallpaper() {
+
+
+
+            var things = ['Read a Book', 'Go for a Swim', 'Mediate', 'Play Piano', 'Draw', 'Socialise', 'Sleep', 'Clean Room'];
+            var thing = things[Math.floor(Math.random() * things.length)];
+            document.getElementById("task").innerHTML = thing;
+
+        }
 
 
 
 
 
-
+        function prettyDate2(time) {
+            var date = new Date(parseInt(time));
+            return date.toLocaleTimeString(navigator.language, {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+    </script>
 
 </body>
 

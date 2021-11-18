@@ -24,14 +24,12 @@
     --width-card-medium: 460px;
     --width-card-wide: 800px;
     --width-content: 1080px;
-			--filter-effect: blur(130px) saturate(4);
-		--opacity-slide: 0.50;
-	
-	
+    --filter-effect: blur(130px) saturate(4);
+    --opacity-slide: 0.50;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
+     :root {
         --color: #0097fc;
         --color-accent: #C50E47;
         --color-bg: #111;
@@ -43,60 +41,144 @@
         --color-table: #0097fc;
         --color-text: #f7f7f7;
         --color-text-secondary: #aaa;
-		--filter-effect: blur(130px);
-		--opacity-slide: 1.0;
+        --filter-effect: blur(130px);
+        --opacity-slide: 1.0;
     }
-	
-	
-	.iconApp{
-  content: url('img/timebaricon.png') !important;
-}
-	
+    .iconApp {
+        content: url('img/timebaricon.png') !important;
+    }
 }
 
 
-/* Layout */
+/* Layout for Phones */
+
 @media only screen and (max-width: 600px) {
-	nav {margin-bottom: 1rem !important;}
-	.downloadLink {display:none !important;}
-	.sendLink {display:block !important;}
-	
-		.downloadLink2 {display:none !important}
-	.sendLink2 {display:block !important}
-	
-	body {overflow-x:hidden;}
-.bars {background-image:none !important;}
-.slide {width:100% !important;border:none !important;}
-#timeBar {display:none !important;}
-.soSpecial  {display:none !important;}
-}
-	
-	
-	
-	
-	
-	.iconApp{
-  content: url('img/timebaricon_d.png') ;
+    nav {
+        margin-bottom: 1rem !important;
+    }
+    .downloadLink {
+        display: none !important;
+    }
+    .sendLink {
+        display: block !important;
+    }
+    .downloadLink2 {
+        display: none !important
+    }
+    .sendLink2 {
+        display: block !important
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .bars {
+        background-image: none !important;
+    }
+    .slide {
+        width: 100% !important;
+        border: none !important;
+    }
+    #timeBar {
+        display: none !important;
+    }
+    .soSpecial {
+        display: none !important;
+    }
 }
 
-	
-	
-	.sendLink {display:none;}
-	
-		.downloadLink2 {display:block;}
-	.sendLink2 {display:none;}
-	
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
+.emoji {
+    font-size: 70px;
 }
+
+.justify {
+    opacity: 0.6;
+    text-align: justify;
+}
+
+.bars {
+    border-bottom: 1px solid #ffffff1c;
+    height: 900px;
+    background-image: linear-gradient(to right, #ffffff1a 1px, transparent 1px);
+    background-size: 200px 30px;
+}
+
+#timeBar {
+    z-index: -1;
+    left: 75%;
+    position: absolute;
+    vertical-align: middle;
+    background: #ffffff1c;
+    display: block;
+    border-left: 5px solid #fff3;
+    color: White;
+    text-align: left;
+    height: 900px;
+    width: 200px;
+    text-align: left;
+}
+
+#timeBar h1 {
+    font-weight: normal;
+    font-family: Segoe UI Light;
+    margin: 450px 0 0 10px;
+    font-size: 100px;
+}
+
+#timeBar h2 {
+    font-weight: normal;
+    opacity: 0.5;
+    margin: 0 0 0 20px;
+    font-size: 30px;
+    width: 400px;
+}
+
+#timeBar p {
+    margin: 190px 0 0 0px;
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.slide {
+    width: 660px;
+    border: 10px solid #ffffff40;
+    margin-bottom: 30px;
+    border-radius: 10px
+}
+
+.iconApp {
+    content: url('img/timebaricon_d.png');
+}
+
+.sendLink {
+    display: none;
+}
+
+.downloadLink2 {
+    display: block;
+}
+
+.sendLink2 {
+    display: none;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+}
+
 .videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #slideE {
@@ -108,20 +190,18 @@
     filter: var(--filter-effect);
     -webkit-filter: var(--filter-effect);
     opacity: var(--opacity-slide);
-display:block;
+    display: block;
 }
 
 .grad {
-
-background: rgb(232,40,51);
-background: linear-gradient(90deg, rgba(232,40,51,1) 0%, rgba(197,15,72,1) 50%, rgba(166,6,92,1) 100%);
+    background: rgb(232, 40, 51);
+    background: linear-gradient(90deg, rgba(232, 40, 51, 1) 0%, rgba(197, 15, 72, 1) 50%, rgba(166, 6, 92, 1) 100%);
 }
+
 .grad2 {
-
-background: rgb(232,255,255);
-color:black;
+    background: rgb(232, 255, 255);
+    color: black;
 }
-
 
 article aside {
     background: var(--color-secondary-accent);
@@ -171,22 +251,20 @@ section pre {
 }
 
 section aside {
-   
-
     border-radius: var(--border-radius);
-
     margin: 1rem;
     padding: 1.25rem;
     width: var(--width-card);
     text-align: center;
 }
 
-
 [hidden] {
     display: none;
 }
 
+
 /* Headers */
+
 article header,
 div header,
 main header {
@@ -214,11 +292,12 @@ section header {
     width: 100%;
 }
 
+
 /* Nav */
+
 nav {
     align-items: center;
     display: flex;
-
     justify-content: space-between;
     margin-bottom: 7rem;
 }
@@ -235,7 +314,9 @@ nav ul li {
     text-align: left;
 }
 
+
 /* Nav Dropdown */
+
 nav ul li:hover ul {
     display: block;
 }
@@ -271,7 +352,9 @@ nav ul li ul li a {
     display: block;
 }
 
+
 /* Typography */
+
 code,
 samp {
     background-color: var(--color-accent);
@@ -287,11 +370,13 @@ details {
 }
 
 details summary {
-
     cursor: pointer;
 }
 
-h1 {font-weight:normal}
+h1 {
+    font-weight: normal
+}
+
 h2,
 h3,
 h4,
@@ -338,18 +423,18 @@ sup {
     border-radius: var(--border-radius);
     color: var(--color-bg);
     font-size: xx-small;
-
     margin: 0.2rem;
     padding: 0.2rem 0.3rem;
     position: relative;
     top: -2px;
 }
 
+
 /* Links */
+
 a {
     color: var(--color-link);
     display: inline-block;
-
     text-decoration: none;
 }
 
@@ -371,11 +456,9 @@ button {
     border-radius: var(--border-radius);
     display: inline-block;
     font-size: medium;
-
     line-height: var(--line-height);
     margin: 0.5rem 0;
     padding: 1rem 2rem;
-
 }
 
 button {
@@ -395,7 +478,7 @@ a b,
 a strong,
 button {
     background-color: var(--color-link);
-    color:white;
+    color: white;
 }
 
 a em,
@@ -411,7 +494,9 @@ article aside a {
     color: var(--color-secondary);
 }
 
+
 /* Images */
+
 figure {
     margin: 0;
     padding: 0;
@@ -424,6 +509,7 @@ figure img {
 figure figcaption {
     color: var(--color-text-secondary);
 }
+
 
 /* Forms */
 
@@ -492,11 +578,12 @@ textarea[readonly] {
 }
 
 label {
-
     margin-bottom: 0.2rem;
 }
 
+
 /* Tables */
+
 table {
     border: 1px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
@@ -541,7 +628,9 @@ table tr:nth-child(even) {
     background-color: var(--color-accent);
 }
 
+
 /* Quotes */
+
 blockquote {
     display: block;
     font-size: x-large;
